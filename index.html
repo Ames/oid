@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>oid</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="shortcut icon" href="favicon.ico" />
+<!--#include virtual="../googleAnalytics.html" -->
+<script type="text/javascript" src="oid.js"></script>
+
+<style>
+
+body{
+	background:black;
+	color:white;
+	font-family: Helvetica Neue, Arial, sans-serif;
+	font-weight:100;
+	margin:0px;
+	padding:0px;
+}
+
+#container{
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	font-size:16px;
+}
+
+.textBox{
+	position:relative;
+	top:10px;
+	left:10px;
+}
+
+.ship, .bullet, .rock{
+	position:absolute;
+	font-size:20px;
+	
+	text-align:center;
+
+	width:1em;
+	height:1em;
+	margin-left:-.5em;
+	margin-top:-.5em;
+	padding-bottom:.15em;
+}
+
+.rock{
+	
+	/* only webkit :( */
+	
+   -webkit-text-fill-color: rgba(0,0,0,0); /* transparent */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;	
+   
+}
+
+</style>
+
+</head>
+<body onload='init()'>
+
+<div id='container'>
+
+</div>
+
+</body>
+</html>
